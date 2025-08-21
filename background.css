@@ -1,0 +1,25 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    background: black;
+}
+
+#canvas-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    filter: blur(1px);
+}
+#content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    background: linear-gradient(to bottom, #000000FF 0%, rgba(20,20,20,0.1) 50%);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
