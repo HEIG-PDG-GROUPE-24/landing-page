@@ -8,6 +8,6 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('visible'); // remove class when out of view
         }
     });
-}, { threshold: 0.6 }); // element is considered visible when 20% is on screen
+}, { threshold: 0.3 }); // element is considered visible when 20% is on screen
 
 faders.forEach(el => observer.observe(el));

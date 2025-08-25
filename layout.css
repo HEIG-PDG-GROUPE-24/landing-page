@@ -141,10 +141,9 @@ html, body {
 
 .illustrated-paragraph{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 
-    width: 75vw;
-    height: 60vh;
+    width: 60vw;
     padding: 2rem;
     margin: auto;
     justify-content: space-evenly;
@@ -155,7 +154,8 @@ html, body {
 }
 
 .illustrated-paragraph img{
-    width: 40vw;
+    max-width: 60vw;
+    max-height: 60vh;
     border-radius: 10px;
     border: 5px solid rgba(255,255,255,0.1);
     filter: brightness(80%);
@@ -164,6 +164,8 @@ html, body {
 .illustrated-paragraph p{
     text-align: justify;
     font-weight: lighter;
+    font-size: 1.2em;
+    max-width: 500px;
 }
 
 .navigate-container{
